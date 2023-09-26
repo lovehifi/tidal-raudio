@@ -2,7 +2,7 @@
 
 A potential solution to breathe new life into your aging Pi 2 or Pi 3.
 >
-Not for OS 64 bit
+
 
 >
 Install
@@ -14,3 +14,5 @@ At times, if you encounter a successful Tidal Connect connection but there is no
 
 >
 You may not need to install Docker for this version (32 bit).
+>
+Not for OS 64 bit
