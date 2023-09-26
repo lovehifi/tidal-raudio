@@ -4,3 +4,5 @@
 Install
 > wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
 >
+Command restart Tidal Connect
+> systemctl restart tc
