@@ -1,7 +1,8 @@
 # Tidal Connect for rAudio 
 
 A potential solution to breathe new life into your aging Pi 2 or Pi 3.
-Not for OS 64 bit)
+>
+Not for OS 64 bit
 
 >
 Install
