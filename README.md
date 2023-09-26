@@ -1,5 +1,6 @@
 # Tidal Connect for rAudio 
-Only for Pi 2 and Pi 3
+Only for Pi 2 and Pi 3.
+A potential solution to breathe new life into your aging Pi.
 
 >
 Install
