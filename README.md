@@ -1,4 +1,5 @@
 # Tidal Connect for rAudio 
+Only for Pi 2 and Pi 3
 > https://github.com/rern/rAudio
 >
 Install
