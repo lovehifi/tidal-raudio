@@ -11,4 +11,4 @@ At times, if you encounter a successful Tidal Connect connection but there is no
 > systemctl restart tc
 
 >
-You may not need to install Docker for this version
+You may not need to install Docker for this version (32 bit).
