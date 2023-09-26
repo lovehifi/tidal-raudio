@@ -15,4 +15,6 @@ At times, if you encounter a successful Tidal Connect connection but there is no
 >
 You may not need to install Docker for this version (32 bit).
 >
-This version is not compatible with 64-bit OS. To run it on a 64-bit OS, you need to use Tidal Connect Docker at:
+This version is not compatible with 64-bit OS. To run it on a 64-bit OS, you need to use Tidal Connect Docker at here: [rern/rAudio Discussions](https://github.com/rern/rAudio/discussions/830#discussioncomment-7105887)
+
+
