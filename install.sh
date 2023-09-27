@@ -39,7 +39,7 @@ if ls /root/*.tgz 1> /dev/null 2>&1; then
 fi
 
 #file_path="/boot/cmdline.txt"
-#sed -i '/ipv6.disable=1/d' "$file_path"
+#sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' "$file_path"
 
 
 systemctl status tc.service
