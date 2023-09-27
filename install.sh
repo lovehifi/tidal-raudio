@@ -41,15 +41,15 @@ fi
 file_path="/boot/cmdline.txt"
 message="We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work."
 if grep -qF "$message" "$file_path"; then
-    read -p "The message already exists. Do you want to remove it? (yes/no): " answer
+    read -p "Do you want to remove it? (yes/no): " answer
     if [[ "$answer" == "yes" ]]; then
         sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' "$file_path"
-        echo "Message removed from $file_path."
+        echo "Removed from $file_path."
     else
-        echo "Message not removed. Exiting."
+        echo "Not removed. Exiting."
     fi
 else
-    echo "Message does not exist. Nothing to remove."
+    echo "Nothing to remove."
 fi
 
 systemctl status tc.service
