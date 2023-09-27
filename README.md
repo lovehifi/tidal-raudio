@@ -9,9 +9,9 @@ Install
 > wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
 >
 >
-We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work.
+We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work. Command:
 >
-
+> cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
 >
 ------------------
 At times, if you encounter a successful Tidal Connect connection but there is no sound, try restarting. The command to restart Tidal Connect is
