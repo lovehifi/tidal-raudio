@@ -38,9 +38,19 @@ if ls /root/*.tgz 1> /dev/null 2>&1; then
   done
 fi
 
-#file_path="/boot/cmdline.txt"
-#sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' "$file_path"
-
+file_path="/boot/cmdline.txt"
+message="We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work."
+if grep -qF "$message" "$file_path"; then
+    read -p "The message already exists. Do you want to remove it? (yes/no): " answer
+    if [[ "$answer" == "yes" ]]; then
+        sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' "$file_path"
+        echo "Message removed from $file_path."
+    else
+        echo "Message not removed. Exiting."
+    fi
+else
+    echo "Message does not exist. Nothing to remove."
+fi
 
 systemctl status tc.service
 
