@@ -38,6 +38,10 @@ if ls /root/*.tgz 1> /dev/null 2>&1; then
   done
 fi
 
+file_path="/boot/cmdline.txt"
+sed -i '/ipv6.disable=1/d' "$file_path"
+
+
 systemctl status tc.service
 
 #wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
