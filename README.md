@@ -5,11 +5,11 @@ A potential solution to breathe new life into your aging Pi 2 or Pi 3.
 
 
 >
-Install:
+1./ Install:
 > wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
 >
 >
-We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work. Command:
+2./ We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work. Command:
 >
 > cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
 >
