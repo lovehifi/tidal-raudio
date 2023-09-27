@@ -11,7 +11,6 @@ A potential solution to breathe new life into your aging Pi 2 or Pi 3.
 >
 2./ We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work.
 >
-Command:
 >
 > cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
 >
