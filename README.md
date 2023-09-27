@@ -5,7 +5,7 @@ A potential solution to breathe new life into your aging Pi 2 or Pi 3.
 
 
 >
-Install
+Install:
 > wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
 >
 >
