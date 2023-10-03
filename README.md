@@ -27,4 +27,6 @@ This version is not compatible with 64-bit OS. To run it on a 64-bit OS, you nee
 and
 [rern/rAudio Discussions](https://github.com/rern/rAudio/discussions/830#discussioncomment-7105887)
 
-
+----------------------------
+Tidal Connect for rAudio 64 bit (Pi 4)
+https://github.com/lovehifi/tidal-raudio-pi4/
