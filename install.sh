@@ -35,7 +35,17 @@ systemctl enable tc.service
 systemctl restart tc.service
 
 cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
+sleep 1
 
+echo "Off the sound onboard"
+grep -q "dtparam=audio=off" /boot/config.txt
+if [ $? -eq 0 ]; then
+echo "onboard off"
+else
+echo "dtparam=audio=off" | sudo tee -a /boot/config.txt
+echo "onboard to off"
+fi
+sleep 1
 echo "Install Finished, system will reboot now"
 if ls /root/*.tgz 1> /dev/null 2>&1; then
   for file in /root/*.tgz; do
