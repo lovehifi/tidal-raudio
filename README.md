@@ -5,14 +5,11 @@ A potential solution to breathe new life into your aging Pi 2 or Pi 3.
 
 
 >
-1./ Install
+Install
 > wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
 >
 >
-2./ We need to remove ipv6.disable=1 in cmdline.txt for Tidal Connect to work.
->
->
-> cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
+
 >
 ------------------
 At times, if you encounter a successful Tidal Connect connection but there is no sound, try restarting. The command to restart Tidal Connect is
