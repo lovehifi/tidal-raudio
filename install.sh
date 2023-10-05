@@ -36,7 +36,6 @@ systemctl restart tc.service
 
 cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
 sleep 1
-
 echo "Off the sound onboard"
 grep -q "dtparam=audio=off" /boot/config.txt
 if [ $? -eq 0 ]; then
@@ -44,6 +43,12 @@ echo "onboard off"
 else
 echo "dtparam=audio=off" | sudo tee -a /boot/config.txt
 echo "onboard to off"
+fi
+sleep 1
+if grep -q "dtparam=audio=on" /boot/config.txt; then
+sudo sed -i '/dtparam=audio=on/d' /boot/config.txt
+else
+echo "No dtparam=audio=on"
 fi
 sleep 1
 echo "Install Finished, system will reboot now"
