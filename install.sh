@@ -35,13 +35,13 @@ systemctl restart tc.service
 
 cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
 
-echo "Install Finished"
+echo "Install Finished, system will reboot now"
 if ls /root/*.tgz 1> /dev/null 2>&1; then
   for file in /root/*.tgz; do
     rm -f "$file"
   done
 fi
-
+sleep 5
 # systemctl status tc.service
 reboot
 
