@@ -12,6 +12,8 @@ Install
 
 >
 ------------------
+Tidal Connect operates based on it with the DAC configuration automatically set from rAudio's '/etc/asound.conf'.
+
 At times, if you encounter a successful Tidal Connect connection but there is no sound, try restarting. The command to restart Tidal Connect is
 > systemctl restart tc
 
