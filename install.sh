@@ -57,6 +57,7 @@ if ls /root/*.tgz 1> /dev/null 2>&1; then
     rm -f "$file"
   done
 fi
+sudo localectl set-locale LANG=en_US.UTF-8
 sleep 5
 # systemctl status tc.service
 reboot
