@@ -42,6 +42,7 @@ if ls /root/*.tgz 1> /dev/null 2>&1; then
   done
 fi
 
-systemctl status tc.service
+# systemctl status tc.service
+reboot
 
 #wget -O - https://raw.githubusercontent.com/lovehifi/tidal-raudio/main/install.sh | sh
