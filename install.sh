@@ -33,6 +33,8 @@ systemctl daemon-reload
 systemctl enable tc.service
 systemctl restart tc.service
 
+cp /boot/cmdline.txt /boot/cmdline.txt.backup && sed -i '0,/ipv6.disable=1/{s/ipv6.disable=1//}' /boot/cmdline.txt
+
 echo "Install Finished"
 if ls /root/*.tgz 1> /dev/null 2>&1; then
   for file in /root/*.tgz; do
