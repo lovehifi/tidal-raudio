@@ -18,7 +18,9 @@ At times, if you encounter a successful Tidal Connect connection but there is no
 > systemctl restart tc
 
 >
-
+Note:
+>
+If you are playing Squeezelite, please switch the Squeezelite status to Player Off before playing music from Tidal Connect.
 >
 This version is not compatible with 64-bit OS. To run it on a 64-bit OS, you need to use Tidal Connect Docker at here: 
 
